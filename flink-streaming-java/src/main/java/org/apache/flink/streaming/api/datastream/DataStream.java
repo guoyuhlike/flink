@@ -183,6 +183,8 @@ public class DataStream<T> {
 	 * @param streams
 	 *            The DataStreams to union output with.
 	 * @return The {@link DataStream}.
+	 *
+	 * !!!!!!!! lwlin done
 	 */
 	@SafeVarargs
 	public final DataStream<T> union(DataStream<T>... streams) {
