@@ -56,11 +56,11 @@ public class OneInputTransformation<IN, OUT> extends StreamTransformation<OUT> {
 	 * @param parallelism The parallelism of this {@code OneInputTransformation}
 	 */
 	public OneInputTransformation(
-			StreamTransformation<IN> input,
-			String name,
-			OneInputStreamOperator<IN, OUT> operator,
-			TypeInformation<OUT> outputType,
-			int parallelism) {
+		StreamTransformation<IN> input,
+		String name,
+		OneInputStreamOperator<IN, OUT> operator,
+		TypeInformation<OUT> outputType,
+		int parallelism) {
 		super(name, outputType, parallelism);
 		this.input = input;
 		this.operator = operator;

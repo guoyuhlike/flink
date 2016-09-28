@@ -230,6 +230,7 @@ public class ConnectedStreams<IN1, IN2> {
 		return transform("Co-Flat Map", outTypeInfo, new CoStreamFlatMap<>(inputStream1.clean(coFlatMapper)));
 	}
 
+	/* lwlin.... done **/
 	@PublicEvolving
 	public <R> SingleOutputStreamOperator<R> transform(String functionName,
 			TypeInformation<R> outTypeInfo,

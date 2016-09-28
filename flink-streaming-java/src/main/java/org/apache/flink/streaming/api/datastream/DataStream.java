@@ -212,6 +212,8 @@ public class DataStream<T> {
 	 *            {@link org.apache.flink.streaming.api.collector.selector.OutputSelector}
 	 *            for directing the tuples.
 	 * @return The {@link SplitStream}
+	 *
+	 * lwlin done
 	 */
 	public SplitStream<T> split(OutputSelector<T> outputSelector) {
 		return new SplitStream<>(this, clean(outputSelector));
@@ -1023,6 +1025,8 @@ public class DataStream<T> {
 	 * @param <R>
 	 *            type of the return stream
 	 * @return the data stream constructed
+	 *
+	 * lwlin done
 	 */
 	@PublicEvolving
 	public <R> SingleOutputStreamOperator<R> transform(String operatorName, TypeInformation<R> outTypeInfo, OneInputStreamOperator<T, R> operator) {

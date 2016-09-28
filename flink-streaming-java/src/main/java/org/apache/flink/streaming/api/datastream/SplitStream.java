@@ -46,6 +46,8 @@ public class SplitStream<OUT> extends DataStream<OUT> {
 	 *            The output names for which the operator will receive the
 	 *            input.
 	 * @return Returns the selected DataStream
+	 *
+	 * // lwlin checked
 	 */
 	public DataStream<OUT> select(String... outputNames) {
 		return selectOutput(outputNames);
